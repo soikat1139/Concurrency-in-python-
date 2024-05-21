@@ -25,4 +25,63 @@ my_lock=threading.Lock()
 #  Semaphore 
 # Barriers
 
+#The acquire() method has  some parameters
+
+#   some_lock.acquire(blocking=True ,timeout=-1)
+
+#   blocking--> If set to false ,the call won't block . Even If the lock is unavailable 
+#   When blocking is set to True a value os -1 causes indefinite waiting .Positive floating point values indicates a  number of seconds to wait ehilr Bloking 
+#  this allows us to create code that doesn't wait indefinitely when trying to acquire a lock 
+
+
+################## Another types of lock
+ # Rlock objects are Re-entrant Locks .They work just like locks excepts:
+    #-----> Allows the same thread to acquire the same lock mulltiple times 
+    #------> Other threads will block on acquire()  but the same thread will not 
+    #--->   The lock must be release the same number of times  it was acquired to return to being available state again 
+
+# use cases : recursion -nested  calls that all must be executed while locking other threads until all have returned 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
