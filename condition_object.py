@@ -99,6 +99,93 @@ t2.join()
 
 
 
+barrier_1=threading.Barrier(number_to_wait_upon)
+
+#Optional parameters :
+   #action = None # A function that can be called upon release 
+
+   # timeout =None  # hOW LONG TO WAIT BEFORE GIVE UP
+
+   barrier_1.wait()  # wait for the count to be met 
+
+   barrier_1.abort()    # breaks barrier .All wait calls will fail with an exception BrokeBarrierError 
+   barrier_1.broken    #Attribute that is true or false 
+
+   barrier_1.parties  #Waiting thread count needed
+
+   barrier_1.n_waiting   # Number of thread currently waiting
+
+   barrier_1.reset() # Reset the barrier to the originnal state 
+
+
+
+   # Barrier can be used to synchronize along a chain of events
+
+
+   #Ensures all player players completed level 1  before proceeding to level 2 
+   
+
+
+   # Timer object in threading  :
+
+
+ #  Timer object allow a thread to be activated only after a specified amount of timme has passed 
+
+ #By default the function specified willl only be executed after interval seconds have passed 
+
+  t1=threading.Timer(intervaI,function,args=None,kwargs=None)
+
+
+  import threaading 
+
+
+  def time_up():
+      print("Time Up)
+
+
+
+
+  timer1=threading.Timer(30,time_up)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
